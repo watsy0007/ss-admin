@@ -3,6 +3,6 @@ if [ $RAILS_ENV != "production" ]; then
     exit 0
 fi
 bundle exec rake db:migrate
-
+export SECRET_KEY_BASE=rake secret
 pumactl -F config/puma.rb start
 
