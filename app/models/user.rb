@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   end
 
   def traffic_usage_percent
-    ((self.u + self.d) / self.transfer_enable).round(2)
+    ((self.u + self.d) / self.transfer_enable.to_f).round(2)
   end
 
   def used_traffic
