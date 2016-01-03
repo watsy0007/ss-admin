@@ -1,4 +1,4 @@
-threads 0, 12
+threads 0, 6
 workers 2
 environment 'production'
 pidfile 'tmp/unicornext.pid'
