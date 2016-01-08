@@ -10,5 +10,4 @@ RUN mkdir tmp
 RUN bundle install --without development test
 
 EXPOSE 8001
-#CMD ["ls", "-al"]
 CMD ["bash","start.sh"]
