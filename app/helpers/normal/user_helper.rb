@@ -1,0 +1,2 @@
+module Normal::UserHelper
+end
